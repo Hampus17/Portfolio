@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-import Navbar from './components/Navbar'
-
-import './styles/reset.scss'
-import './styles/layouts.scss'
+import { Navbar } from './components'
 
 function App() {
   return (
