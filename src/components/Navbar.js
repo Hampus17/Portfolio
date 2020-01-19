@@ -6,7 +6,7 @@ import {
     Route,
 } from 'react-router-dom'
 
-import { Contact, Projects, About } from '../components'
+import { Home, Contact, Projects, About } from '../components'
 
 
 const Navbar = (props) => {
@@ -24,15 +24,10 @@ const Navbar = (props) => {
             </div>
 
             <Switch>
-                <Route path="/about">
-                    <About />
-                </Route>
-                <Route path="/projects">
-                    <Projects />
-                </Route>
-                <Route path="/contact">
-                    <Contact />
-                </Route>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/contact" component={Contact} />
             </Switch>
 
         </Router>
