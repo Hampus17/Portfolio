@@ -14,6 +14,10 @@
     }
 }
 
+.btn_bg {
+    font-size: 1rem;
+}
+
 #landingPage {
     #landingHeader {
         font-size: 2.5rem;
@@ -24,11 +28,27 @@
         font-size: 1.2rem;
     }
 
-    #btn_bg {
-        font-size: 1rem;
-    }
-
     #socials {
         font-size: 2.2rem;
     }
+}
+
+#footer {
+
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #footerSub {
+        font-size: 1.1rem;
+    }
+
+    .footerContact {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    
 }

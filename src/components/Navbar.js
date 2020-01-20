@@ -32,7 +32,6 @@ const Navbar = (props) => {
                     <Home />
                     <Projects />
                     <About />
-                    <Contact />
                 </Route>
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />

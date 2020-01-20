@@ -6,6 +6,7 @@ import { Navbar, Footer } from './components';
 import './styles/layouts.scss';
 import './styles/typography.scss';
 import './styles/reset.scss';
+import './styles/animations.scss';
 
 
 

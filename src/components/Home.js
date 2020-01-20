@@ -11,7 +11,7 @@ const About = (props) => {
             <div id="landingLeft">
                 <h1 id="landingHeader">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                 <p id="landingSub">Morbi sagittis sit amet quam quis consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <button id="btn_bg">Read more</button>
+                <button className="btn_bg">Read more</button>
             </div>
             <div id="landingRight">
                 <img src={LandingImg} alt="Landing Page SVG"></img>
