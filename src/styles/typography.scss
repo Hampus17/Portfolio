@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    ul {
+        #themeSwitch {
+            font-size: 1.5rem;
+            margin-left: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+#landingPage {
+    #landingHeader {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    #landingSub {
+        font-size: 1.2rem;
+    }
+
+    #btn_bg {
+        font-size: 1rem;
+    }
+
+    #socials {
+        font-size: 2.2rem;
+    }
+}
