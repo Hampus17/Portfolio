@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { 
     BrowserRouter as Router, 
     Switch, 
     Link, 
     Route,
+    useLocation
 } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 import { Home, Contact, Projects, About } from '../components'
 
-import logo from '../assets/images/Logo.svg'
+import logo from '../assets/images/Logo.svg';
+
+function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
 
 const Navbar = (props) => {
     return (
-        <Router onUpdate={() => window.scrollTo(0, 0)}>
+        <Router>
+            <ScrollToTop />
             <div id="nav">
                 <ul>
                     <li id="logo"><img src={logo} alt="Logo"></img></li>

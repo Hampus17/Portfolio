@@ -9,7 +9,7 @@ const About = (props) => {
     return (
         <div id="landingPage">
             <div id="landingLeft">
-                <h1 id="landingHeader">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <h1 id="landingHeader">Lorem <span>ipsum</span> dolor sit amet, consectetur adipiscing elit.</h1>
                 <p id="landingSub">Morbi sagittis sit amet quam quis consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 <button className="btn_bg">Read more</button>
             </div>
@@ -22,6 +22,10 @@ const About = (props) => {
                 <FontAwesomeIcon className="landingIcon" icon={faCodepen} />
             </div> 
             <p id="landingLocation">Stockholm, Sweden</p>
+            <div id="scrollButton">
+                <p><div></div>Scroll</p>
+            </div>
+            
         </div>
     );
 }

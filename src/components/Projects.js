@@ -30,14 +30,20 @@ const Projects = () => {
     return (
         <div id="projects">
             {projects.map((project) => 
-                <li key={project.id}>
-                    <p>{project.title}</p>
-                    <p>{project.desc}</p>
-                    {project.skills.map((skill) => 
-                        <p>{skill}</p>
-                    )}
-                   <PImageGrabber imgName={project.altTitle} />
-                </li>
+                <div className="project__details" key={project.id}>
+                    <div className="project__left">
+                        <PImageGrabber className="project__thumb" imgName={project.altTitle} /> {/*Image about 900 x 650 */}
+                    </div>
+                    <div className="project__right">
+                        <h1 className="project__title">{project.title}</h1>
+                        <p className="project__desc">{project.desc}</p>
+                        <ul className="project__tools">
+                            {project.skills.map((skill) => 
+                                <li className="project__skill">{skill}</li>
+                            )}
+                        </ul>
+                    </div> 
+                </div>
             )}
         </div>
     )

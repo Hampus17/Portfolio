@@ -21,9 +21,7 @@ const PImageGrabber = ({ imgName }) => {
         <div>
             <img
                 src={url}
-                alt="Uploaded Images"
-                height="200"
-                width="300"
+                alt="Project Thumbnail"
              />
         </div>
     );
