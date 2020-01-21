@@ -1,5 +1,7 @@
 import React from 'react'
 
+// TODO add contact form instead of contact button
+
 const Footer = () => {
     return (
             <div id="footer">
@@ -8,7 +10,7 @@ const Footer = () => {
                 <p className="footerContact">hampus.a02@gmail.com</p>
                 <p className="footerContact">(+46) 070-123 4567)</p>
                 <a className="btn_bg" href="/contact">Contact</a>
-                <div class="background"></div>
+                <div className="background"></div>
             </div>        
         
     )

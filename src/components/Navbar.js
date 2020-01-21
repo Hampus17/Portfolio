@@ -14,7 +14,7 @@ import logo from '../assets/images/Logo.svg'
 
 const Navbar = (props) => {
     return (
-        <Router>
+        <Router onUpdate={() => window.scrollTo(0, 0)}>
             <div id="nav">
                 <ul>
                     <li id="logo"><img src={logo} alt="Logo"></img></li>
