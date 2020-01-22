@@ -21,7 +21,7 @@ function ScrollToTop() {
     }, [pathname]);
   
     return null;
-  }
+}
 
 const Navbar = (props) => {
     return (

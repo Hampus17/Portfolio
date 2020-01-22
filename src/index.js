@@ -13,6 +13,7 @@ import './styles/animations.scss';
 function App() {
   return (
     <div className="App">
+      <div id="bg"></div>
       <Navbar />
       <Footer />
     </div>

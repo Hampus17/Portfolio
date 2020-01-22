@@ -1,21 +1,15 @@
 import React from 'react'
 
-import LandingImg from '../assets/images/undrawLanding.svg';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 const About = (props) => {
     return (
         <div id="landingPage">
-            <div id="landingLeft">
-                <h1 id="landingHeader">Lorem <span>ipsum</span> dolor sit amet, consectetur adipiscing elit.</h1>
-                <p id="landingSub">Morbi sagittis sit amet quam quis consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <button className="btn_bg">Read more</button>
-            </div>
-            <div id="landingRight">
-                <img src={LandingImg} alt="Landing Page SVG"></img>
-            </div>
+            <h1 id="landingHeader">hampus.</h1>
+            <p id="landingSub">Art director & frontend developer</p>
+            <p id="landingDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis leo a est feugiat, et pretium justo venenatis<br/>. In nulla justo, mollis a odio a, suscipit tempus augue. Vestibulum laoreet convallis rhoncus. Etiam congue <br/>fringilla mauris, at lacinia metus sodales nec. Integer auctor rhoncus metus sed placerat.</p>
+            <button className="btn_bg">Read more</button>
             <div id="socials">
                 <FontAwesomeIcon className="landingIcon" icon={faGithub} />
                 <FontAwesomeIcon className="landingIcon" icon={faLinkedin} />

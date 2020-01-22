@@ -11,42 +11,78 @@
             margin-left: 1.5rem;
             cursor: pointer;
         }
+
+        li a {
+            font-size: 1.6rem;
+        }
     }
 }
 
 .btn_bg {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #landingPage {
+
+    #landingDesc {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: rgb(179, 176, 176);
+
+    }
+
     #landingHeader {
-        font-size: 2.5rem;
+        font-size: 8rem;
         font-weight: 900;
     }
 
+    #landingHeader::before {
+        content: '';
+        display: block;
+        margin-left: 3px;
+        border-bottom: 0.4rem solid white;
+        width: 8rem;
+    }
+
+    #landingLocation {
+        font-size: 1.6rem;
+    }
+
     #landingSub {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .btn_bg {
+        font-size: 1.8rem;
+        font-weight: 600;
     }
 
     #socials {
-        font-size: 2.2rem;
+        font-size: 3.6rem;
+    }
+
+    #scrollButton {
+        p {
+            font-size: 1.6rem;
+        }
     }
 }
 
 #footer {
-
     text-align: center;
+    color: black;
 
     h1 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     #footerSub {
-        font-size: 1.1rem;
+        font-size: 2.1rem;
     }
 
     .footerContact {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: 900;
     }
 
