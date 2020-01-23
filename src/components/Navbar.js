@@ -34,7 +34,7 @@ const Navbar = (props) => {
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link id="resumeBtn" to="/resume">Resumé</Link></li>
+                    <li><Link id="resumeBtn" className="btn__md" to="/resume">Resumé</Link></li>
                     <li id="themeSwitch"><FontAwesomeIcon icon={faAdjust} /></li>
                 </ul>
             </div>
@@ -43,7 +43,6 @@ const Navbar = (props) => {
                 <Route exact path="/">
                     <Home />
                     <Projects />
-                    <About />
                 </Route>
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />

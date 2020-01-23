@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
-const About = (props) => {
+const Home = (props) => {
     return (
         <div id="landingPage">
             <h1 id="landingHeader">hampus.</h1>
@@ -24,4 +24,4 @@ const About = (props) => {
     );
 }
 
-export default About;
+export default Home;

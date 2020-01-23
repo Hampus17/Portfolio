@@ -18,10 +18,11 @@ const PImageGrabber = ({ imgName }) => {
 
 
     return (
-        <div>
+        <div className="project__thumbnails">
             <img
                 src={url}
                 alt="Project Thumbnail"
+                className="project__thumb"
              />
         </div>
     );
