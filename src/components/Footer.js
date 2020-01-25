@@ -5,14 +5,47 @@ import React from 'react'
 const Footer = () => {
     return (
             <div id="footer">
-                <h1>Let's make something beautiful together</h1>
-                <p id="footerSub">I am currently taking on new projects. Would you like to discuss yours?</p>
-                <p className="footerContact">hampus.a02@gmail.com</p>
-                <p className="footerContact">(+46) 070-123 4567)</p>
-                <a className="btn_bg" href="/contact">Contact</a>
-                <div className="background"></div>
-            </div>        
-        
+                <div id="footerLeft">
+                    <h1>Let's make something beautiful together</h1>
+                    <p id="footerSub">I am currently taking on new projects. Would you like to discuss yours?</p>
+                </div>
+                <form id="footerForm">
+                    <div id="formRow">
+                        <input type="text" id="formFName" name="firstname" placeholder="Your name.."/>
+                    </div>
+                    <div id="formRow">
+                        <input type="text" id="formLName" name="lastname" placeholder="Your last name.."/>
+                    </div>
+                    <div id="formRow">
+                        <input type="email" id="formEmail" name="email" placeholder="Your@email.com"/>
+                    </div>
+                    <div class="formRow">
+                        <select id="subject" name="subject">
+                            <option value="subject">Subject</option>
+                            <option value="job">Job enquiry</option>
+                            <option value="message">Message</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div id="formRow">
+                        <textarea id="message" name="subject" placeholder="Write something.." height="200px" ></textarea>
+                    </div>
+                    <div class="formRow">
+                        <input type="submit" value="Submit"/>
+                    </div>
+                </form>
+                
+                <div id="footerBottom">
+                    <p className="footerContact">hampus.a02@gmail.com</p>
+                    <p className="footerContact">(+46) 070-123 4567)</p>
+                    <p className="social__tags">More of me</p>
+                    {/*<div className="background"></div>*/}
+                    <div id="copyright">
+                        <p id="copyNotice">C 2020 Hampus Andersson</p>
+                        <p id="credits">Designed with *heart* from Sweden</p>
+                    </div>
+                </div>
+            </div>  
     )
 }
 

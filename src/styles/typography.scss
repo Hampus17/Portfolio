@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap');
 
 * {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 #nav {
@@ -13,19 +15,19 @@
         }
 
         li a {
-            font-size: 1.6rem;
+            font-size: calc(1.2rem + (1.2 - 1) * ((100vw - 20rem) / 80));
         }
     }
 }
 
 .btn__md {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
-.btn__transparent {
+.btn__wp {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .btn_bg {
@@ -33,6 +35,11 @@
 }
 
 #landingPage {
+
+    #catchPhrase {
+        font-size: 3rem;
+        font-weight: 500;
+    }
 
     #landingDesc {
         font-size: 1.6rem;
@@ -42,16 +49,8 @@
     }
 
     #landingHeader {
-        font-size: 8rem;
+        font-size: calc(6rem + (6 / 4) * ((100vw - 20rem) / 80));
         font-weight: 900;
-    }
-
-    #landingHeader::before {
-        content: '';
-        display: block;
-        margin-left: 3px;
-        border-bottom: 0.4rem solid white;
-        width: 8rem;
     }
 
     #landingLocation {
@@ -65,7 +64,7 @@
 
     .btn_bg {
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     #socials {
@@ -80,15 +79,12 @@
 }
 
 #footer {
-    text-align: center;
-    color: black;
-
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     #footerSub {
-        font-size: 2.1rem;
+        font-size: 1.6rem;
     }
 
     .footerContact {
@@ -96,10 +92,21 @@
         font-weight: 900;
     }
 
+    input[type=text], input[type=email] {
+        font-size: 1.4rem;
+    }
     
+    label {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
 }
 
 #projects {
+    h2 {
+        font-size: calc(1.2rem + (1.2 - 0.8) * ((100vw - 20vw) / 80));;;
+    }
+
 // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     .project__title {
         font-size: calc(1.6rem + (1.8 - 0.9) * ((100vw - 20rem) / 80));;
@@ -107,12 +114,12 @@
     }
 
     .project__desc {
-        font-size: calc(0.8rem + (1.2 - 0.7) * ((100vw - 20rem) / 80));;
+        font-size: calc(1rem + (1 - 0.7) * ((100vw - 20rem) / 80));;
         font-weight: 300;
     }
 
     .project__skill {
-        font-size: calc(1.2rem + (1 - 0.8) * ((100vw - 20vw) / 80));;
+        font-size: calc(1.1rem + (1.1 - 0.8) * ((100vw - 20vw) / 80));;
     }
 
 

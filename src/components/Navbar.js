@@ -29,7 +29,7 @@ const Navbar = (props) => {
             <ScrollToTop />
             <div id="nav">
                 <ul>
-                    <li id="logo"><img src={logo} alt="Logo"></img></li>
+                    <li id="logo"><img src={logo} alt="Logo"></img></li> 
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/about">About</Link></li>

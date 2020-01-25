@@ -1,8 +1,15 @@
-<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewBox="0 0 47 56">
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207" height="61" viewBox="0 0 207 61">
   <defs>
     <style>
       .cls-1 {
         fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 43px;
+        font-family: SegoeUIBlack, Segoe UI;
+        letter-spacing: 0.039em;
       }
     </style>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
@@ -12,6 +19,9 @@
       <stop offset="1" stop-color="#fff"/>
     </linearGradient>
   </defs>
-  <path id="Rectangle_12" data-name="Rectangle 12" class="cls-1" d="M0,0H0A21,21,0,0,1,21,21V34a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(26 22)"/>
-  <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="20" height="56"/>
+  <g id="Logo-2" data-name="Logo">
+    <path id="Rectangle_12" data-name="Rectangle 12" class="cls-1" d="M0,0H0A17,17,0,0,1,17,17V30a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(23 20)"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="18" height="50"/>
+  </g>
+  <text id="ampus." class="cls-2" transform="translate(44 50)"><tspan x="0" y="0">ampus.</tspan></text>
 </svg>
