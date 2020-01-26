@@ -15,6 +15,8 @@ const Home = (props) => {
                     'INVENT SOMETHING DISRUPTIVE?', 
                     'CREATE AN ECOMMERCE WEBSITE?', 
                     'GET STARTED WITH BLOGGING?', 
+                    'MARKET A PRODUCT?',
+                    'GET PEOPLE TO MARS?'
                 ]}
             />
             {/*<button className="btn_bg">Read more</button>*/}

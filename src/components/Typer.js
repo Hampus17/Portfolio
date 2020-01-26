@@ -16,22 +16,24 @@ class Typer extends Component {
     handleType = () => {
         const { dataText } = this.props;
         const { isDeleting, loopNum, text, typingSpeed } = this.state;
-        const i = loopNum % dataText.length;
+        let i = loopNum % dataText.length;
         const fullText = dataText[i];
 
         this.setState({
             text: isDeleting ? fullText.substring(0, text.length - 1) : 
                 fullText.substring(0, text.length + 1), 
-            typingSpeed: isDeleting ? 30 : 100
+            typingSpeed: isDeleting ? 30 : 50
         });
 
         if (!isDeleting && text === fullText) {
-            setTimeout(() => this.setState({ isDeleting: true}), 700);
+            setTimeout(() => this.setState({ isDeleting: true}), 1000);
         } else if (isDeleting && text === '') {
-            this.setState({
-                isDeleting: false,
-                loopNum: loopNum + 1
-            });
+            setTimeout(() => 
+                this.setState({
+                    isDeleting: false,
+                    loopNum: i + 1
+                })
+            , 500)
         }
 
         setTimeout(this.handleType, typingSpeed);

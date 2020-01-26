@@ -104,12 +104,12 @@
 
 #projects {
     h2 {
-        font-size: calc(1.2rem + (1.2 - 0.8) * ((100vw - 20vw) / 80));;;
+        font-size: calc(1.1rem + (1.1 - 0.8) * ((100vw - 20vw) / 80));;;
     }
 
 // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     .project__title {
-        font-size: calc(1.6rem + (1.8 - 0.9) * ((100vw - 20rem) / 80));;
+        font-size: calc(1.6rem + (1.6 - 0.9) * ((100vw - 20rem) / 80));;
         font-weight: 900;
     }
 
@@ -119,7 +119,7 @@
     }
 
     .project__skill {
-        font-size: calc(1.1rem + (1.1 - 0.8) * ((100vw - 20vw) / 80));;
+        font-size: calc(1.2rem + (1.1 - 0.8) * ((100vw - 20vw) / 80));;
     }
 
 

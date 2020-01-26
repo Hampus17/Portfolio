@@ -33,22 +33,19 @@ const Projects = () => {
         <div id="projects">
             {projects.map((project) => 
                 <div className="project__details" key={project.id}>
-                        <div className="project__thumbnails"> 
-                            <PImageGrabber imgName={project.altTitle} /> {/*Image about 900 x 650 */}
+                        <PImageGrabber imgName={project.altTitle} /> {/*Image about 900 x 650 */}
+                        <div className="project__specs">
                             <p className="overlap__text project__title">{project.title}</p>
-                        </div>
-                        <h1 className="project__type">Personal Project</h1> 
-                        <p className="project__desc">{project.desc}</p>
-                        <h2>Skills</h2>
-                        <ul classN  ame="project__tools">
-                            {project.skills.map((skill) => 
-                                <li className="project__skill">{skill}</li>
-                            )}
-                        </ul>
-                        <div className="project__buttons">
+                            <p className="project__desc">{project.desc}</p>
+                            <h2>Skills</h2>
+                            <ul className="project__tools">
+                                {project.skills.map((skill) => 
+                                    <li className="project__skill">{skill}</li>
+                                )}
+                            </ul>
                             <button className="btn__wp btn__source"><FontAwesomeIcon className="btn__icon" icon={faCode} />Source code</button>
                             <button className="btn__wp btn__demo"><FontAwesomeIcon className="btn__icon" icon={faEye} />Live preview</button>
-                       </div>             
+                        </div>         
                 </div>
             )}
             </div>

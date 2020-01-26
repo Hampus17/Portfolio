@@ -31,7 +31,7 @@ const Footer = () => {
                         <textarea id="message" name="subject" placeholder="Write something.." height="200px" ></textarea>
                     </div>
                     <div class="formRow">
-                        <input type="submit" value="Submit"/>
+                        <input className="btn__wp" type="submit" value="Submit"/>
                     </div>
                 </form>
                 
