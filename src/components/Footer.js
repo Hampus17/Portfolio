@@ -34,17 +34,6 @@ const Footer = () => {
                         <input className="btn__wp" type="submit" value="Submit"/>
                     </div>
                 </form>
-                
-                <div id="footerBottom">
-                    <p className="footerContact">hampus.a02@gmail.com</p>
-                    <p className="footerContact">(+46) 070-123 4567)</p>
-                    <p className="social__tags">More of me</p>
-                    {/*<div className="background"></div>*/}
-                    <div id="copyright">
-                        <p id="copyNotice">C 2020 Hampus Andersson</p>
-                        <p id="credits">Designed with *heart* from Sweden</p>
-                    </div>
-                </div>
             </div>  
     )
 }

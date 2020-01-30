@@ -6,8 +6,6 @@ import {
     Route,
     useLocation
 } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 import { Home, Contact, Projects, About } from '../components'
 
@@ -35,7 +33,6 @@ const Navbar = (props) => {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link id="resumeBtn" className="btn__md" to="/resume">Resumé</Link></li>
-                    <li id="themeSwitch"><FontAwesomeIcon icon={faAdjust} /></li>
                 </ul>
             </div>
 

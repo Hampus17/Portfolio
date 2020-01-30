@@ -19,10 +19,11 @@ const Home = (props) => {
                     'GET PEOPLE TO MARS?'
                 ]}
             />
+           
             {/*<button className="btn_bg">Read more</button>*/}
             <div id="socials">
-                <a href="https://github.com/Hampus17/"><FontAwesomeIcon className="landingIcon" icon={faGithub} /></a>
-                <a href="https://linkedin.com/in/Hampus17/"><FontAwesomeIcon className="landingIcon" icon={faLinkedin} /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Hampus17/"><FontAwesomeIcon className="landingIcon" icon={faGithub} /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/Hampus17/"><FontAwesomeIcon className="landingIcon" icon={faLinkedin} /></a>
                 <FontAwesomeIcon className="landingIcon" icon={faCodepen} />
             </div> 
             <p id="landingLocation">Stockholm, Sweden</p>

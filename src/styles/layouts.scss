@@ -45,6 +45,8 @@
 .btn__wp {
   outline: none;
   width: 17rem;
+  padding: 1.5rem;
+  margin: 1rem 1rem 1rem 0;
   text-align: center;
   border: none;
   outline: none;
@@ -74,8 +76,8 @@
   display: flex;
   height: 16rem;
   width: 100%;
-  // background-color: #080808;
-  // box-shadow: 0 2px 20px rgba(0, 0, 0, 0.089), 0 6px 6px rgba(0, 0, 0, 0.034);
+  background-color: #080808;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.089), 0 6px 6px rgba(0, 0, 0, 0.034);
 
   ul {
     display: flex;
@@ -151,9 +153,23 @@
     z-index: 2;
   }
 
+  #landingContact {
+    z-index: 2;
+
+    &::before {
+      content: '';
+      position: relative;
+      display: block;
+      border-top: 4px solid white;
+      top: -3.5rem;
+      width: 160%;
+    }
+  }
+
   #landingHeader {
     flex: 0 0 100%;
     line-height: 90%;
+    min-height: 25vh;
     z-index: 2;
 
     #cursor {
@@ -295,14 +311,15 @@
         transparent 20%
       )
       center center / 15px 15px,
-    linear-gradient(to top, #080808, #080808);
+    linear-gradient(to top, #0a0a0a, #0a0a0a);
   color: white;
   height: auto;
   width: 100%;
+  padding: 8vh 0;
 
   .project__details {
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto auto 40%;
     grid-template-columns: 4fr 4fr 5fr;
     grid-template-areas:
       ". .     title"
@@ -322,13 +339,18 @@
       z-index: 1;
       background-color: rgba(0, 0, 0, 0.335);
       box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.294);
+      padding: 1rem;
     }
 
     .project__thumb {
+      position: relative;
       z-index: 2;
       grid-area: img;
       min-height: 100%;
-      width: 100%;
+      max-width: 100%;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.596);
+      background-size: cover;
       image-rendering: -webkit-optimize-contrast;
       -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
             bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
@@ -362,25 +384,27 @@
     }
 
     h2 {
-      width: 4rem;
+      width: 20%;
       margin: 2rem 0 0 0;
       grid-area: content;
+      border-bottom: 2px solid white;
     }
 
     .project__tools {
       list-style: none;
       width: 50%;
       grid-area: content;
-      margin: 0 0 2rem 0;
+      margin: 0 0 4rem 0;
 
       .project__skill {
         position: relative;
       }
     }
 
-    button {
+    a {
       margin: 1rem 1rem 0 0;
       grid-area: button;
+      text-decoration: none;
     }
   }
 
@@ -393,6 +417,9 @@
       margin-right: 2rem;
     }
   }
+
+
+
 }
 
 .btn__icon {
@@ -404,7 +431,7 @@
   display: flex;
   text-align: left;
   flex-flow: row wrap;
-  height: 60vh;
+  height: 40vh;
   width: 100%;
   padding: 4vh 0 0 0;
   color: white;
@@ -467,7 +494,6 @@
 
     input[type="submit"] {
       margin: 2rem 0 0 0;
-      height: 4rem;
       width: 12rem;
       flex: 0 1 60%;
       cursor: pointer;

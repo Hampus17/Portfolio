@@ -5,6 +5,7 @@ import PImageGrabber from './PImageGrabber';
 import firebase from '../firebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
+import { useSpring, animated } from 'react-spring';
 
 function UseProjects() {
     const [projects, setProjects] = useState([]);
@@ -28,6 +29,7 @@ function UseProjects() {
 
 const Projects = () => {
     const projects = UseProjects();
+    const props = useSpring({opacity: 1, from: {opacity: 0}});
 
     return (
         <div id="projects">
@@ -35,16 +37,16 @@ const Projects = () => {
                 <div className="project__details" key={project.id}>
                         <PImageGrabber imgName={project.altTitle} /> {/*Image about 900 x 650 */}
                         <div className="project__specs">
-                            <p className="overlap__text project__title">{project.title}</p>
+                            <animated.p style={props} className="project__title">{project.title}</animated.p>
                             <p className="project__desc">{project.desc}</p>
                             <h2>Skills</h2>
                             <ul className="project__tools">
-                                {project.skills.map((skill) => 
+                                {project.skills.map((skill) =>  
                                     <li className="project__skill">{skill}</li>
                                 )}
                             </ul>
-                            <button className="btn__wp btn__source"><FontAwesomeIcon className="btn__icon" icon={faCode} />Source code</button>
-                            <button className="btn__wp btn__demo"><FontAwesomeIcon className="btn__icon" icon={faEye} />Live preview</button>
+                            <a target="_blank" rel="noopener noreferrer" href={project.source} className="btn__wp btn__source"><FontAwesomeIcon className="btn__icon" icon={faCode} />Source code</a>
+                            <a target="_blank" rel="noopener noreferrer" href={project.demo}className="btn__wp btn__demo"><FontAwesomeIcon className="btn__icon" icon={faEye} />Live preview</a>
                         </div>         
                 </div>
             )}
