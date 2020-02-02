@@ -1,0 +1,14 @@
+- Create separate about page
+- Add bottom footer to footer
+
+
+- Add media querie breakpoints
+    - Fluid typography with several breakpoints
+
+    - Main site breaks at 1500px
+        - Add hamburger
+
+    Breaks at 2200px:
+    - About section
+    - Footer
+    

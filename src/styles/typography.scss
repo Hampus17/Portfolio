@@ -27,7 +27,7 @@
 
 .btn__wp {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .btn_bg {
@@ -109,17 +109,30 @@
 
 // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     .project__title {
-        font-size: calc(1.6rem + (1.6 - 0.9) * ((100vw - 20rem) / 80));;
+        font-size: 3rem;
         font-weight: 700;
     }
 
     .project__desc {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .project__skill {
         font-size: 1.6rem;
     }
+}
 
 
+#aboutSection {
+    .aboutTitle {
+        font-size: 3rem;
+    }
+
+    .aboutDesc {
+        font-size: 2rem;
+    }
+
+    ul li {
+        font-size: 1.7rem;
+    }
 }
