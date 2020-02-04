@@ -8,7 +8,7 @@ import Typer from './Typer';
 const Home = (props) => {
     return (
         <div id="landingPage">
-            <div id="bg"></div>
+            <div className="bg"></div>
             <h3 id="catchPhrase">Do you want to...</h3>
             <Typer 
                 dataText = {[

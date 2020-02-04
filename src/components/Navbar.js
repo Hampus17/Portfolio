@@ -7,7 +7,7 @@ import {
     useLocation
 } from 'react-router-dom'
 
-import { Home, Contact, Projects, About } from '../components'
+import { Home, Contact, Projects, About, AboutPage } from '../components'
 
 import logo from '../assets/images/Logo.svg';
 
@@ -42,7 +42,7 @@ const Navbar = (props) => {
                     <Projects />
                     <About />
                 </Route>
-                <Route path="/about" component={About} />
+                <Route path="/about" component={AboutPage} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
             </Switch>

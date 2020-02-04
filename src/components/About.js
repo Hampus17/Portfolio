@@ -9,7 +9,7 @@ const About = (props) => {
             </div>
             <div id="aboutMiddle">
                 <h1 className="aboutTitle">Technologies</h1>
-                <p className="aboutDesc"><br/>Commonly used:</p>
+                <p className="aboutDesc">When it comes to technologies I am always on the hunt for new and interesting stuff.<br/><br/>Commonly used:</p>
                 <ul>
                     <li>HTML5</li>
                     <li>React.js</li>

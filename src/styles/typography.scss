@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap');
-
 * {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #nav {
@@ -49,7 +45,7 @@
     }
 
     #landingHeader {
-        font-size: calc(6rem + (6 / 4) * ((100vw - 20rem) / 80));
+        font-size: 9rem;
         font-weight: 900;
     }
 
@@ -76,6 +72,34 @@
             font-size: 1.6rem;
         }
     }
+}
+
+#aboutPage {
+    #aboutTop {
+        #aboutMain {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+
+        #aboutSecondary {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 5rem;
+        }
+    }
+
+    #aboutMid {
+        .about__info {
+            .info__title {
+                font-size: 3rem;
+            }
+
+            .info__desc {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
 }
 
 #footer {
