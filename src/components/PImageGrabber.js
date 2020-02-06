@@ -23,7 +23,6 @@ const PImageGrabber = ({ imgName }) => {
         return;
     });
 
-
     return (
         <animated.img
             src={url}

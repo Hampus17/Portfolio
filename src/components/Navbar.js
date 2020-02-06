@@ -21,26 +21,49 @@ function ScrollToTop() {
     return null;
 }
 
+function handleNav(event) {
+    if(event.target.id.includes('hamburger')) {
+        event.target.classList.toggle = 'navShow';
+    } else {
+        let parent = event.target.parentElement;
+        parent.classList.toggle = 'navShow';
+    }
+}
+
 const Navbar = (props) => {
     return (
         <Router>
             <ScrollToTop />
             <div id="nav">
-                <ul>
+                <ul className="desktopNav">
                     <li id="logo"><img src={logo} alt="Logo"></img></li> 
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link id="resumeBtn" className="btn__md" to="/resume">Resumé</Link></li>
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/projects">projects</Link></li>
+                    <li><Link to="/about">about</Link></li>
+                    <li><Link to="/contact">contact</Link></li>
+                    <li><Link id="resumeBtn" className="btn__md" to="/resume">resumé</Link></li>
                 </ul>
+                <div className="mobileNav">
+                    <img id="mobileLogo"></img>
+                    <div id="hamburger" onClick={handleNav}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="navList">
+                        <li><Link to="/">home</Link></li>
+                        <li><Link to="/projects">projects</Link></li>
+                        <li><Link to="/about">about</Link></li>
+                        <li><Link to="/contact">contact</Link></li>
+                    </ul>
+                </div>
             </div>
 
             <Switch>
                 <Route exact path="/">
                     <Home />
-                    <Projects />
                     <About />
+                    <Projects />
                 </Route>
                 <Route path="/about" component={AboutPage} />
                 <Route path="/projects" component={Projects} />

@@ -16,7 +16,7 @@ const Home = (props) => {
                     'CREATE AN ECOMMERCE WEBSITE?', 
                     'GET STARTED WITH BLOGGING?', 
                     'MARKET A PRODUCT?',
-                    'GET PEOPLE TO MARS?'
+                    'SHOWCASE YOUR ARTWORK?'
                 ]}
             />
            

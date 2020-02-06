@@ -3,6 +3,7 @@ import React, { useState ,useEffect } from 'react';
 import PImageGrabber from './PImageGrabber';
 
 import firebase from '../firebase';
+import handleViewport from 'react-in-viewport';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 import { useSpring, animated } from 'react-spring';

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
 * {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #nav {
@@ -11,7 +12,23 @@
         }
 
         li a {
-            font-size: calc(1.2rem + (1.2 - 1) * ((100vw - 20rem) / 80));
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        ul {
+            li a {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        ul {
+            li a {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -70,6 +87,30 @@
     #scrollButton {
         p {
             font-size: 1.6rem;
+        }
+    }
+
+    @media screen and (max-width: 1900px) {
+        #catchPhrase {
+            font-size: 2.3rem;
+            font-weight: 500;   
+        }
+
+        #landingHeader {
+            font-size: 7rem;
+            font-weight: 900;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        #catchPhrase {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        #landingHeader {
+            font-size: 5rem;
+            font-weight: 900;
         }
     }
 }
@@ -158,5 +199,33 @@
 
     ul li {
         font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: 1900px) {
+        .aboutTitle {
+            font-size: 2.5rem;
+        }
+    
+        .aboutDesc {
+            font-size: 1.8rem;
+        }
+    
+        ul li {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        .aboutTitle {
+            font-size: 2.2rem;
+        }
+    
+        .aboutDesc {
+            font-size: 1.6rem;
+        }
+    
+        ul li {
+            font-size: 1.4rem;
+        }
     }
 }
