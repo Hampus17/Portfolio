@@ -16,12 +16,12 @@
   padding: 1rem 1.8rem;
   outline: none;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid #3f1f8b;
   transition: all 0.1s ease-in-out;
 
   &:hover {
     transition: all 0.1s linear;
-    background-color: white;
+    background-color: #3f1f8b;
   }
 }
 
@@ -33,7 +33,7 @@
   text-align: center;
   border: none;
   outline: none;
-  background-color: #8240fd;//linear-gradient(45deg, #401f8b 0%, #00447e 100%);;
+  background-color:  #3f1f8b;
   height: 5rem;
   border-radius: 5px;
   color: rgb(255, 255, 255);
@@ -41,19 +41,22 @@
 }
 
 .App {
-  background: var(--main-bg);
-  overflow: hidden;
+  background: url(../assets/images/astronomybg.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   // background: linear-gradient(170deg, #030303,#070707);
 }
 
 // NAVBAR
 #nav {
-  position: relative;
+  position: fixed;
   z-index: 10;
   top: 0;
   display: flex;
-  height: 15rem;
+  height: 12vh;
   width: 100%;
+  transition: top 0.2s linear, background 0.2s ease-in-out;
 
   .desktopNav {
     display: flex;
@@ -75,7 +78,7 @@
       }
 
       a#resumeBtn:hover {
-        color: black;
+        color: white;
       }
 
       @media screen and (min-width: 1300px) {
@@ -83,7 +86,7 @@
           transition: all 0.1s linear;
           color: #a3a3a3;
         }
-  
+
         a:not(#resumeBtn)::after {
           content: "";
           position: absolute;
@@ -95,13 +98,13 @@
           background: #fff;
           transition: width 0.2s ease;
         }
-  
+
         a:not(#resumeBtn):hover::after {
           width: 100%;
           left: 0;
         }
       }
-    
+
       a:not(first-of-type) {
         margin-left: 3rem;
       }
@@ -149,10 +152,8 @@
         span:not(:first-of-type) {
           margin: 1rem 0 0 0;
         }
-        
-      }
 
-      
+      }
 
       #navList {
         position: fixed;
@@ -183,9 +184,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: block;
-  // background: linear-gradient(to bottom, #292929, #272727);
+  background: #000000d3;
   z-index: 1;
 }
 
@@ -193,11 +194,11 @@
 #landingPage {
   display: flex;
   align-content: flex-start;
-  padding: 20vh 0 0 0;
+  padding: 32vh 0 0 0;
   flex-flow: row wrap;
   width: 40%;
-  height: 100vh;
-  margin: 0 10%;
+  height: 88vh;
+  margin: 0 10% 12vh 10%;
 
 
   #catchPhrase {
@@ -254,7 +255,7 @@
     margin-left: auto;
     z-index: 2;
   }
-  
+
   #socials {
     position: fixed;
     width: 4rem;
@@ -263,14 +264,14 @@
     text-align: center;
     z-index: 99;
     z-index: 2;
-  
+
     .landingIcon {
       cursor: pointer;
       margin-top: 1.2rem;
       transition: 0.1s ease-in-out;
       color: white;
     }
-  
+
     .landingIcon:hover {
       -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
@@ -278,7 +279,7 @@
       transition: 0.1s ease-in-out;
     }
   }
-  
+
   #landingLocation {
     position: absolute;
     left: 10rem;
@@ -286,7 +287,7 @@
     font-weight: 600;
     z-index: 2;
   }
-  
+
   #landingLocation::before {
     content: "";
     display: block;
@@ -297,18 +298,18 @@
     bottom: -1.1rem;
     z-index: 2;
   }
-  
+
   #scrollButton {
     position: absolute;
     bottom: 2rem;
     left: 50%;
     z-index: 2;
-  
+
     p {
       padding-top: 6rem;
       cursor: default;
     }
-  
+
     p div {
       position: absolute;
       top: 0;
@@ -320,7 +321,7 @@
       border-radius: 50px;
       box-sizing: border-box;
     }
-  
+
     @keyframes scrollButton {
       0% {
         top: 1.2rem;
@@ -332,7 +333,7 @@
         top: 1.2rem;
       }
     }
-  
+
     p div::before {
       position: absolute;
       top: 1.2rem;
@@ -345,7 +346,7 @@
       border-radius: 100%;
       box-sizing: border-box;
       transition: top 0.2s ease-in-out;
-  
+
       animation-name: scrollButton;
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
@@ -354,11 +355,11 @@
   }
 
   @media screen and (max-width: 1800px) {
-    padding: 10vh 0;
+    padding: 15vh 0;
   }
 
   @media screen and (max-width: 1200px) {
-    padding: 5vh 0;
+    padding: 10vh 0;
   }
 }
 
@@ -369,7 +370,7 @@
   position: relative;
   // background-color: #000000;
   // background-image: linear-gradient(0deg, #000000 0%, #080808 74%);padding: 6rem 0;
-  background: var(--main-bg);
+  background: #080808;
   color: white;
   height: auto;
   width: 100%;
@@ -395,7 +396,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      background: #1d1d1d;
+      background: #121212;
       box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       padding: 1rem;
     }
@@ -431,7 +432,7 @@
       grid-area: title;
       line-height: 4.5rem;
       width: fit-content;
-      
+
     }
 
     .project__desc {
@@ -443,6 +444,7 @@
       line-height: 2.7rem;
       align-self: center;
       color: rgb(226, 226, 226);
+      border-bottom: 1px solid gray;
     }
 
     h2 {
@@ -540,7 +542,7 @@
     }
   }
 
-  
+
 }
 
 // About Page
@@ -550,7 +552,8 @@
   width: 100%;
   color: white;
   padding: 0 10%;
-  
+  background-color: #121212;
+
   height: 100vh;
 
   .bg {

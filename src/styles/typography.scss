@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap');
 * {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #nav {
@@ -93,7 +93,7 @@
     @media screen and (max-width: 1900px) {
         #catchPhrase {
             font-size: 2.3rem;
-            font-weight: 500;   
+            font-weight: 500;
         }
 
         #landingHeader {
@@ -160,7 +160,7 @@
     input[type=text], input[type=email] {
         font-size: 1.4rem;
     }
-    
+
     label {
         font-size: 1.4rem;
         font-weight: 700;
@@ -205,11 +205,11 @@
         .aboutTitle {
             font-size: 2.5rem;
         }
-    
+
         .aboutDesc {
             font-size: 1.8rem;
         }
-    
+
         ul li {
             font-size: 1.5rem;
         }
@@ -219,11 +219,11 @@
         .aboutTitle {
             font-size: 2.2rem;
         }
-    
+
         .aboutDesc {
             font-size: 1.6rem;
         }
-    
+
         ul li {
             font-size: 1.4rem;
         }

@@ -1,23 +1,23 @@
 import React, { useEffect } from 'react'
-import { 
-    BrowserRouter as Router, 
-    Switch, 
-    Link, 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Link,
     Route,
     useLocation
 } from 'react-router-dom'
 
 import { Home, Contact, Projects, About, AboutPage } from '../components'
 
-import logo from '../assets/images/Logo.svg';
+import logo from '../assets/images/Logo.png';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
-  
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
-  
+
     return null;
 }
 
@@ -30,17 +30,40 @@ function handleNav(event) {
     }
 }
 
+
+
 const Navbar = (props) => {
+
+    var lastSt;
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset;
+            let nav = document.querySelector("#nav");
+
+            if (scrollTop > lastSt) {
+                nav.style.top = "-15%";
+                nav.style.background = "none";
+            } else {
+                nav.style.top = "0";
+                if (lastSt < 200)
+                    nav.style.background = "none";
+                else
+                    nav.style.background = "#080808";
+            }
+
+            lastSt = scrollTop;
+        })
+    }, [])
+
     return (
         <Router>
             <ScrollToTop />
             <div id="nav">
                 <ul className="desktopNav">
-                    <li id="logo"><img src={logo} alt="Logo"></img></li> 
+                    <li id="logo"><img src={logo} alt="Logo"></img></li>
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/projects">projects</Link></li>
                     <li><Link to="/about">about</Link></li>
-                    <li><Link to="/contact">contact</Link></li>
                     <li><Link id="resumeBtn" className="btn__md" to="/resume">resumé</Link></li>
                 </ul>
                 <div className="mobileNav">
