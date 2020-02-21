@@ -30,8 +30,6 @@ function handleNav(event) {
     }
 }
 
-
-
 const Navbar = (props) => {
 
     var lastSt;
@@ -45,7 +43,7 @@ const Navbar = (props) => {
                 nav.style.background = "none";
             } else {
                 nav.style.top = "0";
-                if (lastSt < 200)
+                if (lastSt < 50)
                     nav.style.background = "none";
                 else
                     nav.style.background = "#080808";

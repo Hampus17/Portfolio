@@ -54,7 +54,7 @@
   z-index: 10;
   top: 0;
   display: flex;
-  height: 12vh;
+  height: 12%;
   width: 100%;
   transition: top 0.2s linear, background 0.2s ease-in-out;
 
@@ -74,7 +74,6 @@
         position: relative;
         text-decoration: none;
         color: white;
-        font-weight: 600;
       }
 
       a#resumeBtn:hover {
@@ -197,7 +196,7 @@
   padding: 32vh 0 0 0;
   flex-flow: row wrap;
   width: 40%;
-  height: 88vh;
+  height: 90vh;
   margin: 0 10% 12vh 10%;
 
 
@@ -229,11 +228,11 @@
     font-weight: 800;
 
     #cursor {
-      border-right: 2rem solid white;
+      border-right: 1rem solid rgb(218, 218, 218);
       animation: cursorBlink 0.7s steps(1) infinite;
       display: inline-block;
-      margin-left: 1rem;
-      height: 2rem;
+      margin-left: 1.5rem;
+      height: 6rem;
     }
 
     @keyframes cursorBlink {
@@ -354,15 +353,36 @@
     }
   }
 
-  @media screen and (max-width: 1800px) {
-    padding: 15vh 0;
-  }
+  @media screen and (min-width: 2560px) {
 
-  @media screen and (max-width: 1200px) {
-    padding: 10vh 0;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    #socials {
+      width: 3rem;
+    }
+
+    #landingHeader {
+
+      #cursor {
+        height: 5rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1440px) {
+    #landingHeader {
+
+      #cursor {
+        height: 3.9rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
   }
 }
-
 
 
 // PROJECTS
@@ -493,7 +513,6 @@
 // About
 #aboutSection {
   position: relative;
-  height: 40vh;
   background: rgb(5, 5, 5);
   width: 100%;
   padding: 5% 10%;

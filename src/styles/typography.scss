@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 * {
-    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #nav {
     ul {
-        #themeSwitch {
-            font-size: 1.5rem;
-            margin-left: 1.5rem;
-            cursor: pointer;
-        }
-
         li a {
             font-size: 2rem;
+            font-weight: 600;
         }
     }
 
-    @media screen and (max-width: 1800px) {
+    @media screen and (max-width: 2560px) {
+        #logo img {
+            height: 4.5rem;
+        }
+
         ul {
             li a {
                 font-size: 1.7rem;
@@ -24,11 +23,22 @@
         }
     }
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1800px) {
+        #logo img {
+            height: 4rem;
+        }
+
         ul {
             li a {
                 font-size: 1.5rem;
             }
+        }
+    }
+    
+    
+    @media screen and (max-width: 1440px) {
+        #logo img {
+            height: 4rem;
         }
     }
 }
@@ -50,7 +60,7 @@
 #landingPage {
 
     #catchPhrase {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 500;
     }
 
@@ -62,7 +72,7 @@
     }
 
     #landingHeader {
-        font-size: 9rem;
+        font-size: 8rem;
         font-weight: 900;
     }
 
@@ -90,30 +100,40 @@
         }
     }
 
-    @media screen and (max-width: 1900px) {
+    @media screen and (min-width: 2560px) {
+
+    }
+    
+    @media screen and (max-width: 1800px) {
         #catchPhrase {
-            font-size: 2.3rem;
-            font-weight: 500;
+            font-size: 2rem;
         }
 
         #landingHeader {
             font-size: 7rem;
-            font-weight: 900;
+        }
+
+        #socials {
+            font-size: 3rem;
+        }
+
+        #landingLocation {
+            font-size: 1.4rem;
         }
     }
-
-    @media screen and (max-width: 1300px) {
+    
+    @media screen and (max-width: 1440px) {
         #catchPhrase {
             font-size: 1.8rem;
-            font-weight: 500;
         }
 
         #landingHeader {
             font-size: 5rem;
-            font-weight: 900;
         }
     }
 }
+
+
 
 #aboutPage {
     #aboutTop {
