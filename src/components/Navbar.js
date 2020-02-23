@@ -62,7 +62,8 @@ const Navbar = (props) => {
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/projects">projects</Link></li>
                     <li><Link to="/about">about</Link></li>
-                    <li><Link id="resumeBtn" className="btn__md" to="/resume">resumé</Link></li>
+                    <li><a href="#">contact</a></li>
+                    <li><Link id="resumeBtn" className="btn__md" to="/resume">resume</Link></li>
                 </ul>
                 <div className="mobileNav">
                     <img id="mobileLogo"></img>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 * {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: europa, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #nav {
@@ -51,6 +51,14 @@
 .btn__wp {
     font-size: 1.5rem;
     font-weight: 300;
+
+    @media screen and (max-width: 1800px) {
+        font-size: 1.4rem;
+    }
+      
+    @media screen and (max-width: 1440px) {
+        font-size: 1.2rem;
+    }
 }
 
 .btn_bg {
@@ -110,7 +118,7 @@
         }
 
         #landingHeader {
-            font-size: 7rem;
+            font-size: 5.5rem;
         }
 
         #socials {
@@ -128,7 +136,16 @@
         }
 
         #landingHeader {
-            font-size: 5rem;
+            font-size: 4.5rem;
+            font-weight: 800;
+        }
+
+        #socials {
+            font-size: 2.7rem;
+        }
+
+        #landingLocation {
+            font-weight: 500;
         }
     }
 }
@@ -138,14 +155,14 @@
 #aboutPage {
     #aboutTop {
         #aboutMain {
-            font-size: 6rem;
-            font-weight: 700;
+            font-size: 5rem;
+            font-weight: 800;
         }
 
         #aboutSecondary {
             font-size: 3rem;
             font-weight: 300;
-            line-height: 5rem;
+            line-height: 3.5rem;
         }
     }
 
@@ -161,11 +178,95 @@
         }
     }
 
+    @media screen and (max-width: 1800px) {
+        #aboutTop {
+            #aboutMain {
+                font-size: 4.5rem;
+                font-weight: 800;
+            }
+    
+            #aboutSecondary {
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 3.5rem;
+            }
+        }
+    
+        #aboutMid {
+            .about__info {
+                .info__title {
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                }
+    
+                .info__desc {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1600px) {
+        #aboutTop {
+            #aboutMain {
+                font-size: 4rem;
+            }
+    
+            #aboutSecondary {
+                font-size: 2.2rem;
+                line-height: 3rem;
+            }
+        }
+    
+        #aboutMid {
+            .about__info {
+                .info__title {
+                    font-size: 2.5rem;
+                }
+    
+                .info__desc {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        #aboutTop {
+            #aboutMain {
+                font-size: 3rem;
+                font-weight: 800;
+            }
+    
+            #aboutSecondary {
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 3rem;
+            }
+        }
+    
+        #aboutMid {
+            .about__info {
+                .info__title {
+                    font-size: 2.2em;
+                    font-weight: 800;
+                }
+    
+                .info__desc {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+    }
+
 }
 
 #footer {
     h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     #footerSub {
@@ -185,6 +286,18 @@
         font-size: 1.4rem;
         font-weight: 700;
     }
+
+    @media screen and (max-width: 1800px) {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    
+    @media screen and (max-width: 1440px) {
+        h1 {
+            font-size: 3.7rem;
+        }
+    }
 }
 
 #projects {
@@ -192,29 +305,72 @@
         font-size: 2rem;
     }
 
-// calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     .project__title {
         font-size: 3rem;
         font-weight: 700;
+        line-height: 4.5rem;
     }
 
     .project__desc {
         font-size: 1.6rem;
+        line-height: 2.7rem;
     }
 
     .project__skill {
         font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 1800px) {
+        .project__title {
+            font-size: 2.8rem;
+            line-height: 3rem;
+        }
+
+        .project__desc {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
+        .project__skill {
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+        }
+    }
+      
+    @media screen and (max-width: 1440px) {
+        .project__title {
+            font-size: 2.6rem;
+            line-height: 2rem;
+        }
+
+        .project__desc {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+
+        .project__skill {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
     }
 }
 
 
 #aboutSection {
     .aboutTitle {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .aboutDesc {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     ul li {
@@ -235,17 +391,33 @@
         }
     }
 
-    @media screen and (max-width: 1800px) {
+    @media screen and (max-width: 1700px) { 
         .aboutTitle {
             font-size: 2.2rem;
         }
 
         .aboutDesc {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
+            line-height: 1.9rem;
         }
 
         ul li {
             font-size: 1.4rem;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        .aboutTitle {
+            font-size: 2rem;
+        }
+
+        .aboutDesc {
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+        }
+
+        ul li {
+            font-size: 1.3rem;
         }
     }
 }
