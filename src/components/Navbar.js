@@ -10,6 +10,8 @@ import {
 import { Home, Contact, Projects, About, AboutPage } from '../components'
 
 import logo from '../assets/images/Logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFolder, faInfoCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -65,20 +67,22 @@ const Navbar = (props) => {
                     <li><a href="#">contact</a></li>
                     <li><Link id="resumeBtn" className="btn__md" to="/resume">resume</Link></li>
                 </ul>
-                <div className="mobileNav">
-                    <img id="mobileLogo"></img>
-                    <div id="hamburger" onClick={handleNav}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul id="navList">
-                        <li><Link to="/">home</Link></li>
-                        <li><Link to="/projects">projects</Link></li>
-                        <li><Link to="/about">about</Link></li>
-                        <li><Link to="/contact">contact</Link></li>
-                    </ul>
+            </div>
+            <div className="mobileNav">
+                <img src={logo} id="mobileLogo"></img>
+                <div id="hamburger" onClick={handleNav}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <ul id="navOpenList">
+                </ul>
+                <ul id="navList">
+                    <li className="nListItem"><Link to="/"><FontAwesomeIcon icon={faHome} />home</Link></li>
+                    <li className="nListItem"><Link to="/projects"><FontAwesomeIcon icon={faFolder} />projects</Link></li>
+                    <li className="nListItem"><Link to="/about"><FontAwesomeIcon icon={faInfoCircle} />about</Link></li>
+                    <li className="nListItem"><Link to="/contact"><FontAwesomeIcon icon={faEnvelope} />contact</Link></li>
+                </ul>
             </div>
 
             <Switch>

@@ -34,13 +34,20 @@
             }
         }
     }
-    
-    
+
+
     @media screen and (max-width: 1440px) {
         #logo img {
             height: 4rem;
         }
     }
+}
+
+#navList {
+
+  .nListItem {
+    font-size: 1.2rem;
+  }
 }
 
 .btn__md {
@@ -55,7 +62,7 @@
     @media screen and (max-width: 1800px) {
         font-size: 1.4rem;
     }
-      
+
     @media screen and (max-width: 1440px) {
         font-size: 1.2rem;
     }
@@ -111,7 +118,7 @@
     @media screen and (min-width: 2560px) {
 
     }
-    
+
     @media screen and (max-width: 1800px) {
         #catchPhrase {
             font-size: 2rem;
@@ -129,7 +136,7 @@
             font-size: 1.4rem;
         }
     }
-    
+
     @media screen and (max-width: 1440px) {
         #catchPhrase {
             font-size: 1.8rem;
@@ -147,6 +154,24 @@
         #landingLocation {
             font-weight: 500;
         }
+    }
+
+    @media screen and (max-width: 1024px) {
+      #catchPhrase {
+          font-size: 1rem;
+      }
+
+      #landingHeader {
+          font-size: 3rem;
+      }
+
+      #socials {
+          font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+
     }
 }
 
@@ -184,21 +209,21 @@
                 font-size: 4.5rem;
                 font-weight: 800;
             }
-    
+
             #aboutSecondary {
                 font-size: 2.5rem;
                 font-weight: 300;
                 line-height: 3.5rem;
             }
         }
-    
+
         #aboutMid {
             .about__info {
                 .info__title {
                     font-size: 2.5rem;
                     font-weight: 800;
                 }
-    
+
                 .info__desc {
                     font-size: 1.6rem;
                     line-height: 2rem;
@@ -206,25 +231,25 @@
             }
         }
     }
-    
+
     @media screen and (max-width: 1600px) {
         #aboutTop {
             #aboutMain {
                 font-size: 4rem;
             }
-    
+
             #aboutSecondary {
                 font-size: 2.2rem;
                 line-height: 3rem;
             }
         }
-    
+
         #aboutMid {
             .about__info {
                 .info__title {
                     font-size: 2.5rem;
                 }
-    
+
                 .info__desc {
                     font-size: 1.6rem;
                     line-height: 2rem;
@@ -239,21 +264,21 @@
                 font-size: 3rem;
                 font-weight: 800;
             }
-    
+
             #aboutSecondary {
                 font-size: 2rem;
                 font-weight: 300;
                 line-height: 3rem;
             }
         }
-    
+
         #aboutMid {
             .about__info {
                 .info__title {
                     font-size: 2.2em;
                     font-weight: 800;
                 }
-    
+
                 .info__desc {
                     font-size: 1.6rem;
                     line-height: 2.2rem;
@@ -292,10 +317,16 @@
             font-size: 4rem;
         }
     }
-    
+
     @media screen and (max-width: 1440px) {
         h1 {
             font-size: 3.7rem;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        h1 {
+            font-size: 2rem;
         }
     }
 }
@@ -340,7 +371,7 @@
             font-size: 1.9rem;
         }
     }
-      
+
     @media screen and (max-width: 1440px) {
         .project__title {
             font-size: 2.6rem;
@@ -391,7 +422,7 @@
         }
     }
 
-    @media screen and (max-width: 1700px) { 
+    @media screen and (max-width: 1700px) {
         .aboutTitle {
             font-size: 2.2rem;
         }

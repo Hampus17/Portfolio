@@ -19,7 +19,7 @@ const Footer = () => {
                     <div id="formRow">
                         <input type="email" id="formEmail" name="email" placeholder="Your@email.com"/>
                     </div>
-                    <div class="formRow">
+                    <div className="formRow">
                         <select id="subject" name="subject">
                             <option value="subject">Subject</option>
                             <option value="job">Job enquiry</option>
@@ -30,11 +30,11 @@ const Footer = () => {
                     <div id="formRow">
                         <textarea id="message" name="subject" placeholder="Write something.." height="200px" ></textarea>
                     </div>
-                    <div class="formRow">
+                    <div className="formRow">
                         <input className="btn__wp" type="submit" value="Submit"/>
                     </div>
                 </form>
-            </div>  
+            </div>
     )
 }
 
