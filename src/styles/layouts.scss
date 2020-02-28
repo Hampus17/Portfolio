@@ -16,12 +16,13 @@
   padding: 1rem 1.8rem;
   outline: none;
   border-radius: 5px;
-  border: 2px solid #3f1f8b;
+  border: 2px solid #3f1f8b65;
   transition: all 0.1s ease-in-out;
 
   &:hover {
     transition: all 0.1s linear;
     background-color: #3f1f8b;
+    border: 2px solid #3f1f8b;
   }
 }
 
@@ -42,7 +43,11 @@
   }
 
   @media screen and (max-width: 1440px) {
+    padding: 1.3rem
+  }
 
+  @media screen and (max-width: 756px) {
+    padding: 1rem
   }
 }
 
@@ -414,22 +419,33 @@
 
   @media screen and (max-width: 1440px) {
     #landingHeader {
-
       #cursor {
         height: 3.9rem;
+      }
+    }
+
+    #scrollButton {
+      width: 80%;
+      left: unset;
+
+      p {
+        text-align: center;
       }
     }
   }
 
   @media screen and (max-width: 1024px) {
-    #landingHeader {
+    width: 80%;
 
+    #landingHeader {
       #cursor {
-        height: 2rem;
+        display: none;
       }
     }
 
-
+    #scrollButton {
+      bottom: 9rem;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -438,11 +454,6 @@
       bottom: 9rem;
       display: flex;
       z-index: 5;
-
-      .landingIcon {
-        cursor: pointer;
-        margin-left: 1rem;
-      }
     }
   }
 
@@ -471,7 +482,7 @@
       "img img title"
       "img img .";
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 5vh 0;
 
     &::after {
@@ -548,7 +559,7 @@
 
       .project__skill {
         position: relative;
-        color: #ff8f8f;
+        color: #CFB53B;
       }
     }
 
@@ -588,9 +599,15 @@
       display: flex;
       flex-direction: column;
 
+      &:after {
+        background: none;
+      }
+
       .project__thumb {
         width: 100%;
         margin: 0 auto;
+        -webkit-box-reflect: unset;
+        margin: 0 0 1rem 0;
       }
     }
 
@@ -651,7 +668,7 @@
       position: relative;
       display: inline-block;
       padding: 0.5rem 1rem 0 0;
-      color: #ff8f8f;
+      color: #CFB53B;
     }
   }
 
@@ -672,13 +689,13 @@
 
     .aboutTitle {
       &::before {
-        left: 50%;
+        left: calc(50% - 5%);
       }
     }
 
     #aboutLeft {
       width: 100%;
-      margin: 0 auto;
+      margin: 5rem auto;
     }
 
     #aboutRight {
@@ -872,11 +889,15 @@
     display: block;
     margin: 0 0 0 auto;
     width: 70%;
-    color: #ff8f8f;
+    color: rgba(207, 180, 59, 0.719);
   }
 
   #footerSub {
     width: 70%;
     margin: 2rem 0 0 auto;
+  }
+
+  @media screen and (max-width: 1600px) {
+    
   }
 }
