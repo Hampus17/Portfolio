@@ -159,7 +159,7 @@
 
     @media screen and (max-width: 1024px) {
       #catchPhrase {
-          font-size: 1rem;
+          font-size: 1.6rem;
       }
 
       #landingHeader {
@@ -330,6 +330,25 @@
     @media screen and (max-width: 1024px) {
         h1 {
             font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 565px) {
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        #footerSub {
+            font-size: 1.2rem;
+        }
+    
+        input[type=text], input[type=email] {
+            font-size: 1rem;
+        }
+    
+        label {
+            font-size: 1.2rem;
+            font-weight: 500;
         }
     }
 }

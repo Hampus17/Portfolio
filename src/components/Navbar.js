@@ -76,12 +76,7 @@ const Navbar = (props) => {
                     <span></span>
                 </div>
                 <ul id="navOpenList">
-                </ul>
-                <ul id="navList">
-                    <li className="nListItem"><Link to="/"><FontAwesomeIcon icon={faHome} />home</Link></li>
-                    <li className="nListItem"><Link to="/projects"><FontAwesomeIcon icon={faFolder} />projects</Link></li>
-                    <li className="nListItem"><Link to="/about"><FontAwesomeIcon icon={faInfoCircle} />about</Link></li>
-                    <li className="nListItem"><Link to="/contact"><FontAwesomeIcon icon={faEnvelope} />contact</Link></li>
+
                 </ul>
             </div>
 

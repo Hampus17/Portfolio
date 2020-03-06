@@ -6,7 +6,7 @@ class Typer extends Component {
         text: '',
         isDeleting: false,
         loopNum: '',
-        typingSpeed: 100
+        typingSpeed: 200
     }
 
     componentDidMount() {
@@ -33,7 +33,7 @@ class Typer extends Component {
                     isDeleting: false,
                     loopNum: i + 1
                 })
-            , 500)
+            , 100)
         }
 
         setTimeout(this.handleType, typingSpeed);
