@@ -7,8 +7,6 @@ import './styles/layouts.scss';
 import './styles/typography.scss';
 import './styles/reset.scss';
 
-
-
 function App() {
   return (
     <div className="App">
@@ -21,3 +19,13 @@ function App() {
 export default App;
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+

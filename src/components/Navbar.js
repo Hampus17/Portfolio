@@ -10,9 +10,6 @@ import {
 import { Home, Contact, Projects, About, AboutPage } from '../components'
 
 import logo from '../assets/images/Logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faFolder, faInfoCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 function ScrollToTop() {
     const { pathname } = useLocation();
 
@@ -23,13 +20,14 @@ function ScrollToTop() {
     return null;
 }
 
-function handleNav(event) {
-    if(event.target.id.includes('hamburger')) {
-        event.target.classList.toggle = 'navShow';
-    } else {
-        let parent = event.target.parentElement;
-        parent.classList.toggle = 'navShow';
-    }
+
+function handleNav(e) {
+    let navList = document.querySelector(".navOpenList");
+    let hamburger = document.querySelector("#hamburger");
+    navList.classList.toggle("navOpen");
+    hamburger.classList.toggle("hamburgerOpen");
+
+    console.log(e.target);
 }
 
 const Navbar = (props) => {
@@ -60,23 +58,25 @@ const Navbar = (props) => {
             <ScrollToTop />
             <div id="nav">
                 <ul className="desktopNav">
-                    <li id="logo"><img src={logo} alt="Logo"></img></li>
+                    <li id="logo"><a href="/"><img src={logo} alt="Logo"></img></a></li>
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/projects">projects</Link></li>
                     <li><Link to="/about">about</Link></li>
-                    <li><a href="#">contact</a></li>
                     <li><Link id="resumeBtn" className="btn__md" to="/resume">resume</Link></li>
                 </ul>
             </div>
             <div className="mobileNav">
-                <img src={logo} id="mobileLogo"></img>
+                <a href="/"><img src={logo} id="mobileLogo"></img></a>
                 <div id="hamburger" onClick={handleNav}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <ul id="navOpenList">
-
+                <ul onClick={handleNav} className="navOpenList">
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/projects">projects</Link></li>
+                    <li><Link to="/about">about</Link></li>
+                    <li><Link id="resumeBtn" to="/resume">resume</Link></li>
                 </ul>
             </div>
 

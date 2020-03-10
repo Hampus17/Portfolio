@@ -78,10 +78,14 @@
   .desktopNav {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 84.5%;
     height: 100%;
     margin: 0 auto;
     padding: 1rem 0 1rem 0;
+
+    @media screen and (max-width: 1500px) {
+        width: 84.5%;
+    }
 
     li {
       list-style: none;
@@ -135,6 +139,8 @@
 .mobileNav {
   display: none;
   position: relative;
+
+  
 }
 
 @media screen and (max-width: 1350px) {
@@ -167,6 +173,7 @@
       right: 10%;
       top: 2rem;
       cursor: pointer;
+      z-index: 4;
 
       span {
         background: white;
@@ -176,12 +183,64 @@
         height: 2px;
         width: 100%;
         display: block;
+        transition: transform 0.2s;
       }
 
       span:not(:first-of-type) {
         margin: 1rem 0 0 0;
       }
 
+      &.hamburgerOpen {
+        span:first-child {
+          transform: rotate(-45deg) translateY(1.1rem) translateX(-0.65rem);
+          transition: transform 0.2s;
+        }
+
+        span:last-child {
+          transform: rotate(45deg) translateY(-1rem) translateX(-0.55rem);
+          transition: transform 0.2s;
+        }
+
+        span:nth-child(even) {
+          opacity: 0;
+        }
+      }
+    }
+
+
+
+    .navOpenList { // set body to overflow hidden
+      width: 100%;
+      height: 105vh;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.972);
+      text-align: right;
+      z-index: 3;
+      opacity: 0;
+      padding: 25% 10% 0 0;
+      right: -120%;
+      transition: right 0.3s, opacity 0.3s;
+      overflow-y: scroll;
+
+      &.navOpen {
+        opacity: 1;
+        right: 0;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 0 0 2rem 0;
+
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 1rem 0;
+        }
+
+        #resumeBtn {
+          color: #6744b8;
+        }
+      }
     }
   }
 }
@@ -197,6 +256,7 @@
     z-index: 2;
     bottom: -0.1rem;
     border-top: 1px solid grey;
+
 
     .nListItem {
       list-style-type: none;
@@ -277,13 +337,17 @@
     }
   }
 
-  #landingHeader {
+  .landingHeader {
     flex: 0 0 100%;
     line-height: 90%;
     min-height: 25vh;
     z-index: 2;
     color: #ffffff;
     font-weight: 800;
+
+    &.mobileHeader {
+      display: none;
+    }
 
     #cursor {
       border-right: 1rem solid #ADADAD;
@@ -405,7 +469,7 @@
       width: 3rem;
     }
 
-    #landingHeader {
+    .landingHeader {
 
       #cursor {
         height: 5rem;
@@ -414,7 +478,7 @@
   }
 
   @media screen and (max-width: 1440px) {
-    #landingHeader {
+    .landingHeader {
       #cursor {
         height: 3.9rem;
       }
@@ -433,19 +497,18 @@
   @media screen and (max-width: 1024px) {
     width: 80%;
 
-    #landingHeader {
-      #cursor {
-        display: none;
-      }
+    .landingHeader.desktopTyper {
+      display: none;
     }
 
-    #scrollButton {
+    .landingHeader.mobileHeader {
+      display: block;
     }
   }
 
   @media screen and (max-width: 565px) {
     #socials {
-      right: 9rem;
+      right: 30%;
       display: flex;
       z-index: 5;
       bottom: 2.5rem;
@@ -470,7 +533,7 @@
   color: white;
   height: auto;
   width: 100%;
-  padding: 8% 0;
+  padding: 8% 0 0 0;
   overflow-x: hidden;
 
   .project__details {
@@ -596,8 +659,9 @@
 
   @media screen and (max-width: 1440px) {
     .project__details {
-      max-width: 90%;
+      max-width: 50%;
       display: flex;
+      padding: 4rem 2rem;
       flex-direction: column;
       background-color: #0f1111;
       border-radius: 5px;
@@ -625,6 +689,17 @@
 
 
   }
+    @media screen and (max-width: 1045px) {
+        .project__details {
+            max-width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .project__details {
+            max-width: 90%;
+        }
+    }
 }
 
 .btn__icon {
@@ -698,7 +773,7 @@
 
     #aboutLeft {
       width: 100%;
-      margin: 5rem auto;
+      margin: 1rem auto 3rem auto;
     }
 
     #aboutRight {
@@ -721,14 +796,13 @@
 // About Page
 #aboutPage {
   position: relative;
-  height: 100vh;
   width: 100%;
   color: white;
-  padding: 8% 10%;
+  padding: 5% 10% 2% 10%;
   background-color: #121212;
 
   .bg {
-    z-index: 1;
+    display: none;
   }
 
   #aboutTop {
@@ -796,6 +870,32 @@
     }
   }
 
+  @media screen and (max-width: 565px) {
+    #aboutTop {
+      #aboutMain {
+          width: 90%;
+      }
+
+      #aboutSecondary {
+          width: 90%;
+      }
+  }
+
+  #aboutMid {
+      .about__info {
+        width: 95%;
+
+          .info__title {
+            width: 95%;
+          }
+
+          .info__desc {
+            width: 95%;
+          }
+      }
+  }
+  }
+
 }
 
 // Footer
@@ -804,7 +904,7 @@
   text-align: left;
   flex-flow: row wrap;
   width: 100%;
-  padding: 4vh 0 4vh 0;
+  padding: 5rem 0 10vh 0;
   background-color: #000000;
 
 
@@ -926,7 +1026,7 @@
   @media screen and (max-width: 565px) {
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 
     #footerLeft {
       text-align: center;

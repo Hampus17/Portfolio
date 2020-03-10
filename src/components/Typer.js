@@ -33,7 +33,7 @@ class Typer extends Component {
                     isDeleting: false,
                     loopNum: i + 1
                 })
-            , 100)
+            , 300)
         }
 
         setTimeout(this.handleType, typingSpeed);
@@ -41,7 +41,7 @@ class Typer extends Component {
 
     render () {
         return(
-            <h1 id="landingHeader">
+            <h1 className="landingHeader desktopTyper">
                 { this.state.text }
                 <span id="cursor"></span>
             </h1>

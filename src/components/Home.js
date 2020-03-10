@@ -19,7 +19,8 @@ const Home = (props) => {
                     'SHOWCASE YOUR ARTWORK?'
                 ]}
             />
-           
+           <h1 className="landingHeader mobileHeader">GET STARTED WITH BLOGGING?</h1>
+
             {/*<button className="btn_bg">Read more</button>*/}
             <div id="socials">
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Hampus17/"><FontAwesomeIcon className="landingIcon" icon={faGithub} /></a>
